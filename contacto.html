@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang = "es">
+
+<head>
+	<title>Club Voleibol Reus</title>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src = "scripts/scripts.js"></script>
+</head>
+<body>
+	<!--Header-->
+	<header>
+		<p>Club Voleibol Reus</p>
+
+		<!--Barra de navegacion-->
+		<nav>
+			<table>
+				<thead>
+				  <tr>
+				    <td>
+				    	<a href="index.html">Inicio</a>
+				    </td>
+				    <td>
+				    	<a href="contacto.html">Contacto</a>
+				    </td>
+				    <td>
+				    	<a href="equipos.html">Equipos</a>				    
+				    </td>
+				    <td>
+				    	<a href="noticias.html">Notícias</a>
+				    </td>
+				  </tr>
+				</thead>
+			</table>
+		</nav>
+	</header>
+	
+
+	<!--Banner de inicio-->
+	<div class = bannerinicio>
+		<b>Bienvenido/da</b>
+		<p>Página web oficial del Club Voleibol Reus</p>
+		<button class = unete onclick="location.href = 'equipos.html'">
+			<p>+ Información</p>
+		</button>
+	</div>
+
+
+	<!--Cuerpo de la pagina-->
+
+	<main>
+		<div class="containercontacto">
+		<p id="principal">Contacta con nosotros y te resolveremos cualquier duda en menos tiempo del que crees!</p>
+		<p id="secundario">Puedes contactar con nosotros a través de:</p>
+		
+		<button class = "unete" onclick="location.href = 'https://www.instagram.com/clubvoleibolreus/'"><p>Instagram</p></button>
+		<p>O bien a través de este formulario de contacto:</p>
+
+		<form>
+			<fieldset>
+				<legend class="leyenda">
+					Datos personales
+				</legend>
+				<p>Nombre</p>
+				<input type="text" name="nombre" placeholder="Escribe aquí tu nombre">
+				<p>Apellidos</p>
+				<input type="text" name="apellidos" placeholder="Escribe aquí tus apellidos">
+			</fieldset>
+
+			<fieldset>
+					<legend class="leyenda">
+						Datos de contacto
+					</legend>
+					<p>Numero de telefono</p>
+					<input type="number" name="telefono" placeholder="Escribe aquí tu numero de telefono">
+					<p>Correo electrónico</p>
+					<input type="email" name="correo" placeholder="Escruibe aquí tu correro electrónico">
+			</fieldset>
+
+			<fieldset>
+				<legend class = "leyenda">
+					Mensaje
+				</legend>
+				<p>Asunto</p>
+				<input type="text" name="asunto" placeholder="Escribe aquí tu asunto">
+				<p>Mensaje</p>
+				<textarea name="mensaje" placeholder="Escribe aquí tu mensaje" rows="10"></textarea>
+			</fieldset>
+
+			<input type="submit" name="submit" value="Enviar" class="b_submit">
+
+		</form>
+		</div>
+	</main>
+
+	<aside class="ascont">
+		<form>
+			<h4>Login socios</h4>
+			<p>DNI</p>
+				 <input type="text">
+			<p>Contraseña</p>
+				<input type="password" name="">
+			<p><input type="submit" id="b_submit" class="b_submit" value= "Entrar"></p>
+			<a href="formregistro.html" title="Registro" id="sincuenta">Sin cuenta? Regístrate ya</a>
+		
+		</form>
+		<div class="container1">
+			<div class="countdown">
+			<h3>Tiempo restante para la nueva temporada:</h3>
+			<div>
+				<h2 id="days">00</h2>
+				<span>dias</span>
+			</div>
+			<div>
+				<h2 id="hours">00</h2>
+				<span>horas</span>
+			</div>
+			<div>
+				<h2 id="minutes">00</h2>
+				<span>minutos</span>
+			</div>
+			<div>
+				<h2 id="seconds">00</h2>
+				<span>segundos</span>
+			</div>
+		</div>
+		<script src="scripts/count.js"></script>
+		</div>
+		
+	<div class="containerpopup">
+		<article>
+			<h1>Información sobre tu navegador</h1>
+			<button id="btn-abrir-popup" class="b_submit">Navegador</button>
+		</article>
+	</div>
+
+		<div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i><button class="cerrar">Cerrar</button></a>
+				<h3>Información de tu navegador:</h3>
+				<h4 id="infonav"></h4>
+				<script src="scripts/infonav.js"></script>
+			</div>
+		</div>
+		<script src = scripts/popup.js></script>
+		<a class="efecto_texto"></a>
+	</aside>
+	
+	<footer>
+		<ul>
+			<li>
+				<h5>Andrea Siles Morales</h5>
+			</li>
+			<li>
+				<p>29/10/2021</p>
+			</li>
+			<li>
+				<p>Copyright &copy</p>
+			</li>
+		</ul>
+		
+	</footer>

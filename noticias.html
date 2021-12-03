@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang = "es">
+
+<head>
+	<title>Club Voleibol Reus</title>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src = "scripts/scripts.js"></script>
+</head>
+<body>
+	<!--Header-->
+	<header>
+		<p>Club Voleibol Reus</p>
+
+		<!--Barra de navegacion-->
+		<nav>
+			<table>
+				<thead>
+				  <tr>
+				    <td>
+				    	<a href="index.html">Inicio</a>
+				    </td>
+				    <td>
+				    	<a href="contacto.html">Contacto</a>
+				    </td>
+				    <td>
+				    	<a href="equipos.html">Equipos</a>				    
+				    </td>
+				    <td>
+				    	<a href="noticias.html">Notícias</a>
+				    </td>
+				  </tr>
+				</thead>
+			</table>
+		</nav>
+	</header>
+	
+
+	<!--Banner de inicio-->
+	<div class = bannerinicio>
+		<b>Bienvenido/da</b>
+		<p>Página web oficial del Club Voleibol Reus</p>
+		<button class = unete onclick="location.href = 'equipos.html'">
+			<p>+ Información</p>
+		</button>
+	</div>
+
+
+	<!--Cuerpo de página-->
+
+	<!--Menú con anclas-->
+		<div class="anclas">
+			<b>Acceso rápido:</b><br>
+			<ol class="ordered">
+				<li><a href="#noticia1">Selva del Camp</a></li>
+				<li><a href="#novedades">Novedades de esta temporada</a>
+					<ul class="unordered">
+						<li><a href="#noticia2">Nueva equipación</a></li>
+						<li><a href="#noticia4">Nuevo pabellón</a></li>
+					</ul>
+				</li>
+				<li><a href="#noticia3">Loteria del club</a></li>
+				<li><a href="#hemeroteca">Hemeroteca</a></li>
+			</ol>
+		</div>
+		
+
+
+	<div class="containernoticias">
+		<a name="noticia1"></a>
+		<div class="noticia" style="background-color: #EDE573;">
+			<p class="header">El voleibol llega a la Selva del Camp</p>
+			<figure>
+				<img src="fotos/noti1.jpg" height="300px">
+				<figcaption>Extraescolar de la escuela</figcaption>
+			</figure>
+			
+			<p class="cuerpo">El instituto Joan Puig i Ferrater de la Selva del Camp en col·laboración con el Club Voleibol Reus organiza una actividad extraescolar de iniciación al voley.</p>
+		</div>
+
+		<a name="noticia2"></a>
+		<a name="novedades"></a>
+		<div class="noticia">
+			<p class="header">Nueva equipación</p>
+			<figure>
+				<img src="fotos/noti2.jpg" height="300px">
+				<figcaption>Nueva equipación</figcaption>
+			</figure>
+
+			<p class="cuerpo">En conmemoración del 5º aniversario de nuestro club, hemos diseñado una nueva camiseta de juego con todo tipo de detalles. Esta nueva camseta cambia por completo nuestra imagen, para poder seguir creciendo cada vez más y poder llegar bien lejos con todos nuestros equipos</p>
+		</div>
+
+		<a name="noticia3"></a>
+		<div class="noticia" style="background-color: #EDE573";>
+			<p class="header">Loteria del club, ya disponible!</p>
+			<figure>
+				<img src="fotos/noti3.jpg" height="300px">
+				<figcaption>Loteria del club</figcaption>
+			</figure>
+
+			<p class="cuerpo">El club ya dispone de loteria de La Grossa de fin de año. Aquellos interesados tanto es distribuir como en comprar se deben poner en contacto con el club. Además la podrás encontrar en todos los partidos locales de todas las categorias.</p>
+		</div>
+
+		<a name="noticia4"></a>
+		<div class="noticia">
+			<p class="header">Nueva sede para el club</p>
+			<figure>
+				<img src="fotos/noti4.jpg" height="300px">
+				<figcaption>Nuevo pabellón</figcaption>
+			</figure>
+
+			<p class="cuerpo">El voleibol Reusense se estrena esta temporada, no solo con nueva equipación, sino que tambiés con un nuevo pabellón, el Joan Rebull, un polideportivo completamente nuevo construido al lado de la escuela Joan Rebull. Después de los contínuos robos en el antiguo pabellón del Barri Gaudí ya podemos disfrutar de las nuevas instalaciones i el suelo de parqué.</p>
+		</div>
+	</div>
+
+	<a name="hemeroteca"></a>
+	<div class="containervideos">
+		<p class="hemeroteca">Hemeroteca</p>
+		<table class="videos">
+			<tr>
+				<td>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/RTWRpqriUKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/JSMgIuGthw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+
+<footer>
+		<ul>
+			<li>
+				<h5>Andrea Siles Morales</h5>
+			</li>
+			<li>
+				<p>29/10/2021</p>
+			</li>
+			<li>
+				<p>Copyright &copy</p>
+			</li>
+		</ul>
+		
+	</footer>
+
+</html>

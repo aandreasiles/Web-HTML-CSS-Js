@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Club Voleibol Reus</title>
+		<meta charset = "UTF-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script type="text/javascript" src = "scripts/scripts.js"></script>
+	</head>
+	<body>
+		<!--Header-->
+	<header>
+		<p>Club Voleibol Reus</p>
+
+		<!--Barra de navegacion-->
+		<nav>
+			<table>
+				<thead>
+				  <tr>
+				    <td>
+				    	<a href="index.html">Inicio</a>
+				    </td>
+				    <td>
+				    	<a href="contacto.html">Contacto</a>
+				    </td>
+				    <td>
+				    	<a href="equipos.html">Equipos</a>				    
+				    </td>
+				    <td>
+				    	<a href="noticias.html">Notícias</a>
+				    </td>
+				  </tr>
+				</thead>
+			</table>
+		</nav>
+	</header>
+	
+
+	<!--Banner de inicio-->
+	<div class = bannerinicio>
+		<b>Bienvenido/da</b>
+		<p>Página web oficial del Club Voleibol Reus</p>
+		<button class = unete onclick="location.href='equipos.html'">
+			<p>+ Información</p>
+		</button>
+	</div>
+
+	<!-- Cuerpo de pagina-->
+
+	<main class="containerequipos">
+		<p class="titulo">EQUIPOS</p>
+		<table class="tablaequipos">
+				<thead>
+				<tr>
+					<td colspan="3">Haz click en las fotos y obtén más información sobre los equipos</td>
+				</tr>
+				<tr>
+					<td>
+						<div class = foto_centro>
+							<a href="https://fcvolei.cat/voleibol/4A-DIVISIO-SENIOR-FEMENINA-2122/"><img src="fotos/seniorfem.jpg" height="300px" width="300px"></a>
+							<div class="textocentrado"><p>Sénior Femenino</p></div>
+						</div>
+					</td>
+					<td>
+						<div class = foto_centro>
+							<a href="https://fcvolei.cat/voleibol/2A-DIVISIO-SENIOR-MASCULINA-2122/#grup5"><img src="fotos/seniormasc.jpg" height="300px" width="300px"></a>
+							<div class="textocentrado"><p>Sénior Masculino</p></div>
+						</div>
+					</td>
+					<td>
+						<div class = foto_centro>
+							<a href="https://fcvolei.cat/voleibol/3A-DIVISIO-JUVENIL-FEMENINA-2122/#grup1"><img src="fotos/juvfem.jpg" height="300px" width="300px"></a>
+							<div class="textocentrado"><p>Juvenil Femenino</p></div>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<div class = foto_centro>
+							<a href="https://fcvolei.cat/voleibol/1A-DIVISIO-JUVENIL-MASCULINA-2122/#grup4"><img src="fotos/juvmasc.jpg" height="300px" width="300px"></a>
+							<div class="textocentrado"><p>Juvenil Masculino</p></div>
+						</div>
+					</td>
+
+					<td>
+						<div class = foto_centro>
+							<a href="https://fcvolei.cat/voleibol/3A-DIVISIO-CADET-FEMENINA-2122/#grup1"><img src="fotos/cadfem.jpg" height="300px" width="300px"></a>
+							<div class="textocentrado"><p>Cadete Femenino</p></div>
+						</div>
+					</td>
+
+					<td>
+						<div class = foto_centro>
+							<a href="https://fcvolei.cat/voleibol/1A-DIVISIO-CADET-MASCULINA-2122/#grup4"><img src="fotos/cadmasc.jpg" height="300px" width="300px"></a>
+							<div class="textocentrado"><p>Cadete Masculino</p></div>
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<div class = foto_centro>
+							<a href="https://fcvolei.cat/voleibol/2a-divisio-infantil-femenina-2122/"><img src="fotos/inffem.jpg" height="300px" width="300px"></a>
+							<div class="textocentrado"><p>Infantil Femenino</p></div>
+						</div>
+					</td>
+
+					<td>
+						<div class = foto_centro>
+							<a href="https://fcvolei.cat/voleibol/1A-DIVISIO-INFANTIL-MASCULINA-2122/#grup4"><img src="fotos/infmasc.jpg" height="300px" width="300px"></a>
+							<div class="textocentrado"><p>Infantil Masculino</p></div>
+						</div>
+					</td>
+
+					<td>
+						<div class = foto_centro>
+							<a href="https://fcvolei.cat/voleibol/LLIGA-ALEVI-MIXT-2122/#grup6"><img src="fotos/alevin.jpg" height="300px" width="300px"></a>
+							<div class="textocentrado"><p>Alevín Mixto</p></div>
+						</div>
+					</td>
+				</tr>
+
+				</thead>
+			</table>
+	</div>
+
+	<div class="equipo">
+		<div class="slideshow-container">
+			<div class="atras botones">&#10094</div>
+			<div class="adelante botones">&#10095</div>
+			<img src="fotos/seniormasc.jpg" id="img">
+		</div>
+		<script src="scripts/slider.js"></script>
+	</div>
+
+</main>
+
+<aside class="asideequipos">
+		<form>
+			<h4>Login socios</h4>
+			<p>DNI</p>
+				 <input type="text">
+			<p>Contraseña</p>
+				<input type="password" name="">
+			<p><input type="submit" id="b_submit" class="b_submit" value= "Entrar"></p>
+			<a href="formregistro.html" title="Registro" id="sincuenta">Sin cuenta? Regístrate ya</a>
+		
+		</form>
+		<div class="container1">
+			<div class="countdown">
+			<h3>Tiempo restante para la nueva temporada:</h3>
+			<div>
+				<h2 id="days">00</h2>
+				<span>dias</span>
+			</div>
+			<div>
+				<h2 id="hours">00</h2>
+				<span>horas</span>
+			</div>
+			<div>
+				<h2 id="minutes">00</h2>
+				<span>minutos</span>
+			</div>
+			<div>
+				<h2 id="seconds">00</h2>
+				<span>segundos</span>
+			</div>
+		</div>
+		<script src="scripts/count.js"></script>
+		</div>
+		
+	<div class="containerpopup">
+		<article>
+			<h1>Información sobre tu navegador</h1>
+			<button id="btn-abrir-popup" class="b_submit">Navegador</button>
+		</article>
+	</div>
+
+		<div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i><button class="cerrar">Cerrar</button></a>
+				<h3>Información de tu navegador:</h3>
+				<h4 id="infonav"></h4>
+				<script src="scripts/infonav.js"></script>
+			</div>
+		</div>
+		<script src = scripts/popup.js></script>
+		<a class="efecto_texto"></a>
+	</aside>
+
+	<footer>
+		<ul>
+			<li>
+				<h5>Andrea Siles Morales</h5>
+			</li>
+			<li>
+				<p>29/10/2021</p>
+			</li>
+			<li>
+				<p>Copyright &copy</p>
+			</li>
+		</ul>
+		
+	</footer>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang = "es">
+
+<head>
+	<title>Club Voleibol Reus</title>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src = "scripts/scripts.js"></script>
+	<script src="scripts/formulario.js" type="text/javascript"></script>
+</head>
+<body>	
+	<!--Header-->
+	<header>
+		<p>Club Voleibol Reus</p>
+
+		<!--Barra de navegacion-->
+		<nav>
+			<table>
+				<thead>
+				  <tr>
+				    <td>
+				    	<a href="index.html">Inicio</a>
+				    </td>
+				    <td>
+				    	<a href="contacto.html">Contacto</a>
+				    </td>
+				    <td>
+				    	<a href="equipos.html">Equipos</a>				    
+				    </td>
+				    <td>
+				    	<a href="noticias.html">Notícias</a>
+				    </td>
+				  </tr>
+				</thead>
+			</table>
+		</nav>
+	</header>
+
+	<!--Banner de inicio-->
+	<div class = bannerinicio>
+		<b>Bienvenido/da</b>
+		<p>Página web oficial del Club Voleibol Reus</p>
+		<button class= unete onclick="location.href = 'equipos.html'">
+			<p>+ Información</p>
+		</button>
+	</div>
+
+	<main>
+		<form class = "nuevouser">
+			<h4>Nuevo usuario</h4>
+			<div class="nom">
+				<p>Nombre</p>
+				<input type="text" required="required" id="name">
+			</div>
+			<div class="ape">
+				<p>Apellidos</p>
+				<input type="text" required="required" id="ape">
+			</div>
+			<div class="email">
+				<p>Correo electrónico</p>
+				<input type="text" name="email" required="required" id="email" onblur="validarCorreo()">
+			</div>
+			<div class="contra">
+				<p>Contraseña</p>
+				<input type="password" required="required" id="contra">
+			</div>
+			<div class="repecontra">
+				<p>Repite tu contraseña</p>
+				<input type="password" required="required" id="repecontra" onblur="controlContrasena()">
+			</div>
+			<div class="tel">
+				<p>Número de teléfono</p>
+				<input type="text" id="tel" required="required" name="tel" onblur="validarTel()">
+				<div id="alerta"></div>
+			</div>
+			<div class="dir">
+				<p>Dirección</p>
+				<input type="text" required="required" id="dir">
+			</div>
+			<div class="codpost">
+				<p>Código postal</p>
+				<input type="number" required="required" id="codpost" name="codpost" onblur="validarCP()">
+			</div>
+			<div class="dni">
+				<p>DNI</p>
+				<input type="text" required="required" name="dni" id="dni" onblur="validarDni()">
+			</div>
+			
+			<p>Escoge una opción</p>
+			<select name="Relacion" id="opt">
+   					<option value="1">Soy jugador</option> 
+  				 	<option value="2">Soy familiar</option> 
+   					<option value="3">Soy espectador</option>
+   					<option value="4">Soy patrocinador</option> 
+   					<option value="5">Soy del equipo directivo</option> 
+   					<option value="6">Otros</option> 
+			</select>
+			<p>Carga aquí la fotocopia de tu DNI</p>
+				<input type="file" required="required" id="file">
+			<p>Observaciones</p>
+				<textarea id="obs">
+				</textarea>
+			<p><input type="button" class="b_submit" value="Resumen" onclick="tablaDatos()"></p>
+			<p><input type="submit" value="Registrarse" class="b_submit"></p>
+			<div id="tabladatos"></div>
+			
+		</form>
+
+	</main>
+	
+	<!--footer-->
+	<footer>
+		<ul>
+			<li>
+				<h5>Andrea Siles Morales</h5>
+			</li>
+			<li>
+				<p>29/10/2021</p>
+			</li>
+			<li>
+				<p>Copyright &copy</p>
+			</li>
+		</ul>
+		
+	</footer>
+</body>
+</html>

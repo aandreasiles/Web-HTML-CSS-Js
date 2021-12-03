@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang = "es">
+
+<head>
+	<title>Club Voleibol Reus</title>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src = "scripts/scripts.js"></script>
+</head>
+<body>
+	<!--Header-->
+	<header>
+		<p>Club Voleibol Reus</p>
+
+		<!--Barra de navegacion-->
+		<nav>
+			<table>
+				<thead>
+				  <tr>
+				    <td>
+				    	<a href="index.html">Inicio</a>
+				    </td>
+				    <td>
+				    	<a href="contacto.html">Contacto</a>
+				    </td>
+				    <td>
+				    	<a href="equipos.html">Equipos</a>				    
+				    </td>
+				    <td>
+				    	<a href="noticias.html">Notícias</a>
+				    </td>
+				  </tr>
+				</thead>
+			</table>
+		</nav>
+	</header>
+	
+
+	<!--Banner de inicio-->
+	<div class = bannerinicio>
+		<b>Bienvenido/da</b>
+		<p>Página web oficial del Club Voleibol Reus</p>
+		<button class = unete onclick="location.href = 'equipos.html'">
+			<p>+ Información</p>
+		</button>
+	</div>
+
+
+	<!--Contenido de la pagina-->
+	<main>
+		<article class="art1">
+
+			<!--Menú pequeño con las fotos-->
+			<table class="tablainicio">
+				<thead>
+				<tr>
+					<td>
+						<div class = foto_centro>
+							<a href="equipos.html"> <img name="icono1" src="fotos/inicio1.jpg" width="300" height="300" onmouseover="cambia_foto1()" onmouseout="cambia_foto1()"></a>
+							<div class="centrado"><p>Esta temporada contamos con más de 15 equipos federados</p></div>
+						</div>
+					</td>
+					<td>
+						<div class="foto_centro">
+							<a href="contacto.html"><img name ="icono2" src="fotos/inicio2.jpg" width="300" height="300" onmouseover="cambia_foto2()" onmouseout="cambia_foto2()"></a>
+							<div class="centrado"><p>Ven a jugar al CVR</p></div>
+						</div>
+					</td>
+					<td>
+						<div class="foto_centro">
+							<a href="noticias.html"><img name="icono3" src="fotos/inicio3.jpg" width="300" height="300" onmouseover="cambia_foto3()" onmouseout="cambia_foto3()"></a>
+							<div class="centrado"><p>Consulta las últimas notícias</p></div>
+							
+						</div>
+					</td>
+				</tr>
+				</thead>
+				
+			</table>
+		</article>
+
+		<article class="timeline">
+				<!--Historia-->
+				<div class="container">
+					<div class="wrapper">
+						<h1>Historia del club</h1>
+						<ul class="sessions">
+							<li>
+								<div class="año">2016</div>
+								<p>Nacimiento del club</p>
+							</li>
+							<li>
+								<div class="año">2017</div>
+								<p>Comienzan los primeros entrenamientos y partidos en la liga catalana</p>
+							</li>
+							<li>
+								<div class="año">2017</div>
+								<p>Creación de la nueva y primera equipación</p>
+							</li>
+							<li>
+								<div class="año">2018</div>
+								<p>Ascendemos a primera divsión catalana</p>
+							</li>
+
+							<li>
+								<div class="año">2021</div>
+								<p>El club crece exponencialmente duplicando los equipos existentes</p>
+							</li>
+
+							<li>
+								<div class="año">2021</div>
+								<p>El club cumple 5 años. Creación de la nueva equipación especial del 5º aniversario</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+		</article>
+
+
+		<article class = info>
+			<table>
+				<thead>
+	  				<tr>
+	    				<td>
+	    					<img src="fotos/logo.png" width="200" height="200">
+	    				</td>
+	    				<td>
+	    					<h3>
+	    						Contacta ya!
+	    					</h3>
+	    					<p>
+	    						A través de nuestro instragram mediante un mensaje directo o a través de nuestro correo
+	    					</p>
+	    					<button class="unete" onclick="location.href = 'contacto.html'"><p>Contactar</p></button>
+	    				</td>
+	    				<td>
+	    					<h3>
+	    						¿Dónde estamos?
+	    					</h3>
+	    					<p>Polilleuger Joan Rebull, Av. Onze de Setembre, 8, Reus</p>
+	    					<button class="unete" onclick="location.href = 'https://www.google.es/maps/place/Escola+Joan+Rebull/@41.1636113,1.1039749,17z/data=!3m1!4b1!4m5!3m4!1s0x12a15105369c9f7f:0x3fed1aa50c2ecbef!8m2!3d41.1636176!4d1.1061568?hl=es'"><p>Cómo llegar</p></button>
+	    				</td>
+	  				</tr>
+				</thead>
+			</table>
+		</article>
+		<article class=fotos>
+				<table>
+					<thead>
+		  				<tr>
+		    				<td>
+		    				<img src="fotos/reusesport.jpg" width="200" height="200">
+		    				</td>
+		    				<td>
+		    					<img src="fotos/ajuntament.png" width="200" height="100">
+		    				</td>
+		  				</tr>
+					</thead>
+				</table>
+			</div>
+		</article>
+
+	</main>
+
+
+	<aside>
+		<form>
+			<h4>Login socios</h4>
+			<p>DNI</p>
+				 <input type="text">
+			<p>Contraseña</p>
+				<input type="password" name="">
+			<p><input type="submit" id="b_submit" class="b_submit" value= "Entrar"></p>
+			<a href="formregistro.html" title="Registro" id="sincuenta">Sin cuenta? Regístrate ya</a>
+		
+		</form>
+		<div class="container1">
+			<div class="countdown">
+			<h3>Tiempo restante para la nueva temporada:</h3>
+			<div>
+				<h2 id="days">00</h2>
+				<span>dias</span>
+			</div>
+			<div>
+				<h2 id="hours">00</h2>
+				<span>horas</span>
+			</div>
+			<div>
+				<h2 id="minutes">00</h2>
+				<span>minutos</span>
+			</div>
+			<div>
+				<h2 id="seconds">00</h2>
+				<span>segundos</span>
+			</div>
+		</div>
+		<script src="scripts/count.js"></script>
+		</div>
+		
+	<div class="containerpopup">
+		<article>
+			<h1>Información sobre tu navegador</h1>
+			<button id="btn-abrir-popup" class="b_submit">Navegador</button>
+		</article>
+	</div>
+
+		<div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i><button class="cerrar">Cerrar</button></a>
+				<h3>Información de tu navegador:</h3>
+				<h4 id="infonav"></h4>
+				<script src="scripts/infonav.js"></script>
+			</div>
+		</div>
+		<script src = scripts/popup.js></script>
+		<a class="efecto_texto"></a>
+	</aside>
+
+	<footer>
+		<ul>
+			<li>
+				<h5>Andrea Siles Morales</h5>
+			</li>
+			<li>
+				<p>29/10/2021</p>
+			</li>
+			<li>
+				<p>Copyright &copy</p>
+			</li>
+		</ul>		
+	</footer>
+
+</body>
+</html>
